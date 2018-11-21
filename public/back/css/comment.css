@@ -137,3 +137,11 @@
    text-align: center;
    line-height: 50px;
  }
+
+
+ .lt_content .echarts_left,
+ .lt_content .echarts_right{
+   width: 48%;
+   height: 400px;
+   background-color: skyblue;
+ }
