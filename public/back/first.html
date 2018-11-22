@@ -76,7 +76,40 @@
           </div>
 
       </div>
-       
+    
+
+
+
+       <!-- 准备模态框 (点击分类按钮显示的模态框)
+           控制模态框的大小：modal-lg大  默认中等 modal-sm小
+           data-dismiss="modal" 可以关闭当前模态框
+
+      
+      -->
+      <!-- 外层div是蒙层 -->
+      <div class="modal fade" tabindex="-1" id="firstModal">
+          <!-- 内层是模态框 -->
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <form id="form">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                  <h4 class="modal-title">添加分类</h4>
+                </div>
+                <div class="modal-body">
+                  <!-- 每行外层要套一个 form-group，如果不套，后面的表单校验插件会报错 -->
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="请输入一级分类" name="categoryName">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                  <button type="submit" id="firstAddBtn" class="btn btn-primary">添加</button>
+                </div>
+              </form>
+              </div>
+            </div> 
+        </div>
 
 
       <!-- 准备模态框 
