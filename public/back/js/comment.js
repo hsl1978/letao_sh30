@@ -1,18 +1,22 @@
+//这个进度条放在入口函数的外面，这样就可以在每个页面都有这个效果了
+
+
+ 
+ // ajax全局事件机制
+
+ $(document).ajaxStart(function() {
+  // 开启进度条
+  　　NProgress.start();
+});
+
+$(document).ajaxStop(function() {
+  // 关闭进度条
+  　　NProgress.done();
+});
+
+
+
 $(function(){
-
-  // ajax全局事件机制
-
-  $(document).ajaxStart(function() {
-    // 开启进度条
-    　　NProgress.start();
-  });
-
-  $(document).ajaxStop(function() {
-    // 关闭进度条
-    　　NProgress.done();
-  });
-
-
 
   // 公共的功能
     // 1.左侧二级菜单切换功能
