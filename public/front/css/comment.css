@@ -141,3 +141,21 @@ body,html{
   height: 130px;
   margin: 0 auto;
 }
+
+/* 公共的搜索区域 */
+.lt_search{
+  padding: 10px;
+}
+.lt_search .search_input{
+   font-size: 12px;
+   margin: 0;
+   height: 34px;
+   border: 1px solid #0A79FF;
+   border-radius: 5px;
+}
+.lt_search .search_btn{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  border-radius: 0 5px 5px 0;
+}
