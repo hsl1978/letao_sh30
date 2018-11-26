@@ -117,10 +117,9 @@ $(function() {
         // 删除最后一张图片
         $("#imgBox img:last-of-type").remove();
       }
+
       if (picArr.length === 3) {
-        $("#form")
-          .data("bootstrapValidator")
-          .updateStatus("picStatus", "VALID");
+        $("#form").data("bootstrapValidator").updateStatus("picStatus", "VALID");
       }
     }
   });
@@ -218,12 +217,9 @@ $(function() {
     var paramsStr = $("#form").serialize(); //所有表单内容数据
 
     // 需要拼接上图片的地址和名称
-    paramsStr +=
-      "&picName1=" + picArr[0].picName + "&picAddr1=" + picArr[0].picAddr;
-    paramsStr +=
-      "&picName2=" + picArr[0].picName + "&picAddr2=" + picArr[0].picAddr;
-    paramsStr +=
-      "&picName3=" + picArr[0].picName + "&picAddr3=" + picArr[0].picAddr;
+    paramsStr +="&picName1=" + picArr[0].picName + "&picAddr1=" + picArr[0].picAddr;
+    paramsStr +="&picName2=" + picArr[1].picName + "&picAddr2=" + picArr[1].picAddr;
+    paramsStr +="&picName3=" + picArr[2].picName + "&picAddr3=" + picArr[2].picAddr;
 
     // console.log(paramsStr);
     $.ajax({

@@ -53,7 +53,7 @@ $(function(){
       $('.lt_product').html(htmlStr);
     }
   })
- },5000)
+ },1000)
 
 
   }
